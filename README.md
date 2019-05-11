@@ -8,6 +8,7 @@ With -n option, starts a new XEmacs process, skipping the gnuclient functionalit
 
 .cshrc setup: gnuclient requires GNU_SECURE to be set. I recommend the following your .cshrc file:
 
+    setenv GNU_SECURE $HOME/.gnu_secure_file
     if ( ! -e $GNU_SECURE ) then
       touch $GNU_SECURE >> /dev/null
     endif
